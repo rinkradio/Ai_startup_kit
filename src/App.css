@@ -1,0 +1,58 @@
+/* Update the #root style with the client's Figma CSS */
+#root {
+  box-sizing: border-box;
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px 0px 40px;
+  background: radial-gradient(60% 88% at 50% 64.2%, #d438ff 0%, rgb(140, 69, 255) 39.99155405405405%, rgb(25, 13, 46) 84.93278434684684%, rgb(0, 0, 0) 100%);
+  max-width: 1600px;
+  min-height: 700px;
+  overflow: hidden;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 40px;
+  position: absolute;
+  border-radius: 0px 0px 0px 0px;
+  text-align: center; /* Keeping text-align from your original code */
+}
+
+/* The rest of your existing CSS remains unchanged */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
